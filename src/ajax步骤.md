@@ -28,7 +28,7 @@
 - 使用异步对象发送请求
 
   ```
-  xmlHttp.responseText;
+xmlHttp.send();
   ```
 
   
