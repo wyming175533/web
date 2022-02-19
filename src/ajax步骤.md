@@ -30,6 +30,11 @@
   ```
 xmlHttp.send();
   ```
-
-  
+使用json
+            servlet 中通过这个将object对象转换位json字符串
+            ObjectMapper om  = new ObjectMapper();
+            (string类型)json =  om.writeValueAsString(object);
+            
+            在jsp中通过这个将json字符串转换为json对象
+            var jsonobj = eval("(" + data + ")");
 

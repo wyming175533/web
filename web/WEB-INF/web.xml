@@ -7,6 +7,14 @@
         <servlet-name>bmiServlet</servlet-name>
         <servlet-class>com.controll.bmiServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>queryjsonServlet</servlet-name>
+        <servlet-class>com.controll.queryjsonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>queryjsonServlet</servlet-name>
+        <url-pattern>/queryjson</url-pattern>
+    </servlet-mapping>
 
     <servlet-mapping>
         <servlet-name>bmiServlet</servlet-name>

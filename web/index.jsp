@@ -8,8 +8,11 @@
         xmlHttp.onreadystatechange=function (){
 
           if(xmlHttp.readyState==4 && xmlHttp.status==200){
-            var data=xmlHttp.responseText;
-            alert(data);
+            var data="你好王一鸣";
+            data+=xmlHttp.responseText;
+
+            document.getElementById("mydiv").innerText=data;
+
           }
 
         }
@@ -32,7 +35,7 @@
   身高:<input type="text" id="h"/>
   体重:<input type="text" id="g">
   <input type="button" id="btn" value="提交" onclick="ajaxdo()">
-    <div id="mydata"></div>
+    <div id="mydiv">等待加载...</div>
   </div >
   </body>
 </html>
